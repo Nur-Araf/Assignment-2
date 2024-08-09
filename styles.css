@@ -1,0 +1,189 @@
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+:root {
+  --color-primary: #e6533c;
+  --color-secondary: #fff;
+  --global-margin: 0 11rem 0 11rem;
+  --box-margin: ;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(24, 24, 27, 1) 0%
+  );
+}
+
+.container {
+  margin: var(--global-margin);
+  padding: 1px;
+}
+
+.navbar {
+  margin-top: 2.5rem;
+}
+
+.logo {
+  color: var(--color-primary);
+  font-size: 2rem;
+  align-items: center;
+}
+
+.special {
+  background-color: var(--color-primary);
+  padding: 0.53rem 1.3rem;
+  border-radius: 2.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.ul {
+  padding: 0.6rem;
+  border: 0.5px solid gray;
+  border-radius: 2.4rem;
+}
+
+.nav-link {
+  margin: 0rem 1.4rem 0 1.4rem;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+
+.icon {
+  color: #fff;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: none;
+}
+
+/* till navbar and container */
+
+.hero-heading {
+  font-size: 4.8rem;
+  color: #fff;
+  font-weight: bolder;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.span-1 {
+  font-family: "Miama", sans-serif;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  font-size: 8rem;
+  margin-bottom: -0.4em;
+  line-height: 1;
+}
+
+.hero-para {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.8rem;
+}
+
+.btn_join {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem 2.4rem;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  margin-right: 0.9rem;
+}
+
+.btn_download {
+  background-color: black;
+  color: white;
+  padding: 1rem 2.4rem;
+  border-radius: 2.6rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.hero-img-section {
+  position: relative;
+}
+/* done */
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  /* height: 6rem;
+  width: 6rem; */
+  position: absolute;
+  left: -6rem;
+  bottom: 5rem;
+  border-radius: 12px;
+}
+
+.round {
+  height: 3.1rem;
+  width: 3.1rem;
+  border-radius: 50%;
+  margin: 0 0.8rem;
+  background-color: chocolate;
+}
+.number {
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.video {
+  color: rgba(239, 237, 232, 0.65);
+}
+
+.box-1 {
+  /* height: 6rem;
+  width: 6rem; */
+  position: absolute;
+  right: -3.2rem;
+  top: 8rem;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .icon {
+    display: inline-block;
+  }
+  .container {
+    margin: 1rem;
+  }
+  .ul {
+    display: none;
+  }
+  /* till navbar */
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 2rem;
+  }
+}
