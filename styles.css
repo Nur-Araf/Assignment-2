@@ -12,7 +12,7 @@
   --color-primary: #e6533c;
   --color-secondary: #fff;
   --global-margin: 0 11rem 0 11rem;
-  --box-margin: ;
+  --mobile-margin: 0 0.8rem 0 0.8rem;
 }
 
 .flex {
@@ -22,8 +22,7 @@
 }
 
 .landing-page {
-  height: 100vh;
-  width: 100vw;
+  padding: 1px;
   background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
@@ -32,13 +31,20 @@
   );
 }
 
+.nav-container {
+  margin: var(--global-margin);
+}
+
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: var(--global-margin);
   padding: 1px;
 }
 
 .navbar {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .logo {
@@ -87,6 +93,12 @@
   margin-bottom: 1.8rem;
 }
 
+.tag-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .span-1 {
   font-family: "Miama", sans-serif;
   letter-spacing: 0.4rem;
@@ -133,8 +145,6 @@
   background-color: rgb(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem;
-  /* height: 6rem;
-  width: 6rem; */
   position: absolute;
   left: -6rem;
   bottom: 5rem;
@@ -151,6 +161,7 @@
 .number {
   color: #fff;
   margin-bottom: 0.3rem;
+  letter-spacing: 0.1rem;
 }
 
 .video {
@@ -158,8 +169,6 @@
 }
 
 .box-1 {
-  /* height: 6rem;
-  width: 6rem; */
   position: absolute;
   right: -3.2rem;
   top: 8rem;
@@ -173,17 +182,86 @@
   .icon {
     display: inline-block;
   }
+
+  .navbar {
+    margin-top: 0.8rem;
+  }
+  .nav-container {
+    margin: 1rem;
+  }
   .container {
     margin: 1rem;
+    flex-direction: column;
+  }
+
+  .nav-container {
+    margin: var(--mobile-margin);
   }
   .ul {
     display: none;
   }
-  /* till navbar */
-}
 
-@media screen and (max-width: 992px) {
-  .container {
-    margin: 2rem;
+  .hero-heading {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+  }
+
+  .span-1 {
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    margin-top: -3rem;
+    font-weight: 100;
+    line-height: 0;
+  }
+
+  .hero-para {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 2rem 0;
+  }
+
+  .btn_container {
+    display: flex;
+  }
+
+  .btn_join {
+    padding: 1rem 1.6rem;
+  }
+
+  .btn_download {
+    padding: 1rem 1.6rem;
+  }
+
+  .main_img {
+    padding: 0 5rem;
+  }
+
+  .box {
+    left: 7rem;
+    bottom: 15rem;
+    padding: 0.7rem;
+  }
+
+  .round {
+    height: 2.1rem;
+    width: 2.1rem;
+    border-radius: 50%;
+    margin: 0 0.4rem;
+  }
+
+  .number {
+    color: #fff;
+    margin-bottom: 0.1rem;
+  }
+  .workout {
+    font-size: x-small;
+  }
+  .tutorail {
+    font-size: small;
+  }
+  .box-1 {
+    right: 7rem;
+    top: 4rem;
+    padding: 0.7rem;
   }
 }
+
