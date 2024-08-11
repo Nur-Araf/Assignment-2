@@ -136,7 +136,6 @@
 .hero-img-section {
   position: relative;
 }
-/* done */
 
 .box {
   display: flex;
@@ -178,6 +177,57 @@
   padding: 1rem;
 }
 
+/* Landing Page End */
+
+.habit-section {
+  background-color: black;
+  color: #fff;
+  padding: 4rem 11rem;
+}
+
+.habit-heading {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.habit-head {
+  font-size: 3rem;
+  margin-bottom: 0.9rem;
+}
+
+.habit-para {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.single-card {
+  margin: 0 1.1rem;
+}
+
+.habit-img {
+  border-radius: 50%;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-heading {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-para {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* till habit */
 @media screen and (max-width: 576px) {
   .icon {
     display: inline-block;
@@ -216,7 +266,7 @@
 
   .hero-para {
     color: rgba(255, 255, 255, 0.5);
-    margin: 2rem 0;
+    margin: 1.8rem 0;
   }
 
   .btn_container {
@@ -263,5 +313,36 @@
     top: 4rem;
     padding: 0.7rem;
   }
-}
 
+  /* Landing Page End */
+
+  .habit-section {
+    padding: 0.3rem 0.8rem;
+  }
+
+  .habit-heading {
+    margin-bottom: 0.8rem;
+  }
+
+  .habit-head {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .main-card {
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+
+  .single-card {
+    margin: 0 0.7rem;
+  }
+
+  .card-content {
+    margin: 1.8rem 0;
+  }
+
+  .card-heading {
+    margin-bottom: 0.2rem;
+  }
+}
