@@ -217,5 +217,82 @@
     </section>
 
     <!-- Unique Task End  -->
+
+    <section class="calculator-section">
+      <div class="cal-heading">
+        <h1 class="cal-head">BMI Calculator</h1>
+        <p class="cal-para">
+          By checking your BMI you can take steps to gain a proper health
+        </p>
+      </div>
+
+      <div class="calculation-section">
+        <div class="cal-container">
+          <div class="cal-chart">
+            <h1 class="bmi-head">BMI Calculator Chart</h1>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>BMI Range</th>
+                  <th>Weight Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5–24.9</td>
+                  <td>Normal weight</td>
+                </tr>
+                <tr>
+                  <td>25.0–29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30.0 and Above</td>
+                  <td>Obese</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="all-calculation">
+            <div class="all-heading">
+              <h1 class="bmi-head">Calculate your BMI</h1>
+              <p class="all-para">
+                Calculate your BMI to know about your health status
+              </p>
+            </div>
+
+            <div class="inp-section">
+              <input type="number" id="height" placeholder="Height/cm" />
+              <input type="number" id="weight" placeholder="Weight/kg" />
+
+              <input type="number" id="age" placeholder="Age" />
+              <select id="sex" name="sex" class="sex">
+                <option value="" disabled selected>Select your sex</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+
+              <input
+                type="number"
+                id="select"
+                placeholder="Select an activity factor"
+              />
+            </div>
+
+            <button class="btn_calculate">Join Now!</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BMI Section End //////-->
   </body>
 </html>

@@ -279,7 +279,7 @@
 .imageone {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 /* Habit section End  ---------*/
@@ -287,7 +287,7 @@
 .unique-section {
   background-color: black;
   color: #fff;
-  padding: 4rem 11rem;
+  padding: 2rem 11rem;
 }
 
 .uni-heading {
@@ -353,6 +353,112 @@
 
 /* Unique Task End */
 
+.calculator-section {
+  background-color: black;
+  color: #fff;
+  padding: 1px;
+}
+
+.cal-heading {
+  text-align: center;
+  padding: 2rem 11rem;
+}
+
+.cal-head {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.cal-para {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.calculation-section {
+  background-color: #222222;
+}
+
+.cal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 11rem;
+}
+
+.cal-chart {
+  padding: 2rem 0;
+}
+
+.bmi-head {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+th,
+td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border: 1px solid gray;
+}
+
+th {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+td {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.all-heading {
+  text-align: center;
+}
+
+.all-para {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.inp-section {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   margin: 1rem 0.5rem;
+   padding: 1rem 0.5rem;
+}
+
+#select {
+  grid-column: span 2;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0.4rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.sex {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0.4rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.5rem;
+  color: gray;
+}
+
+.btn_calculate {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem 2.6rem;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  margin-left: 1.4rem;
+}
+
+/* BMI End */
 @media screen and (max-width: 576px) {
   .icon {
     display: inline-block;
@@ -397,8 +503,7 @@
   .btn_container {
     display: flex;
   }
- */
-  .main_img {
+  */ .main_img {
     padding: 0 5rem;
   }
 
@@ -466,60 +571,113 @@
   /* till Habit  */
 
   .extra-mile {
-  flex-direction: column;
-  margin-top: 2rem;
-  padding: 1rem 1rem;
-}
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+  }
 
-.btn_container-2 {
-  margin-left: 30%;
-}
+  .btn_container-2 {
+    margin-left: 30%;
+  }
 
-.btn_join-2 {
-  margin: 1rem 0;
-}
+  .btn_join-2 {
+    margin: 1rem 0;
+  }
 
-/* Habit Section Done */
+  /* Habit Section Done */
 
+  .unique-section {
+    background-color: black;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+  }
 
-.unique-section {
-  background-color: black;
-  color: #fff;
+  .uni-heading {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .uni-head {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .uni-para {
+    font-size: x-small;
+  }
+
+  .uni-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .uni-card {
+    margin: 0.7rem 1.2rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .uni-img-container {
+    width: 320px;
+    height: 130px;
+  }
+
+  .uni-h1 {
+    margin: 0.5rem 0;
+  }
+
+  /* Unique Task End */
+.cal-heading {
   padding: 0.3rem 0.8rem;
+  margin-bottom: 1rem;
 }
 
-.uni-heading {
-  text-align: center;
+.cal-head {
+  font-size: 2rem;
   margin-bottom: 0.8rem;
 }
 
-.uni-head {
-  font-size: 1.4rem;
-  margin-bottom: 0.2rem;
+.cal-para {
+  font-size: 0.9rem;
 }
 
-.uni-para {
-  font-size: x-small;
+.cal-container {
+  flex-direction: column;
+  padding: 0.2rem 0.4rem;
 }
 
-.uni-container {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(200px, 1fr));
+.cal-chart {
+  padding: 1.5rem 0;
 }
 
-.uni-card {
-  margin: 0.7rem 1.2rem;
-  padding: 0.7rem 1.2rem;
+.bmi-head {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.uni-img-container {
-  width: 320px;
-  height: 130px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.2rem;
+}
+th,
+td {
+  padding: 0.8rem 1rem;
 }
 
-.uni-h1 {
-  margin: 0.5rem 0;
+th {
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
-/* Unique Task End */
+td {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+.all-para {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* BMI-Section End -----*/
 }
