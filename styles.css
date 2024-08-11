@@ -208,14 +208,28 @@
 
 .single-card {
   margin: 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-card {
+  text-align: center;
 }
 
 .habit-img {
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid rgb(73, 73, 73);
 }
 
 .card-content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-heading {
@@ -225,6 +239,7 @@
 
 .card-para {
   color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
 /* till habit */
