@@ -22,7 +22,7 @@
 }
 
 .landing-page {
-  padding: 1px;
+  padding: 0.1px;
   background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
@@ -282,7 +282,77 @@
   object-fit: cover; 
 }
 
-/* Habit section Done */
+/* Habit section End  ---------*/
+
+.unique-section {
+  background-color: black;
+  color: #fff;
+  padding: 4rem 11rem;
+}
+
+.uni-heading {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.uni-head {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.uni-para {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.uni-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.uni-card {
+  margin: 1.5rem 2rem;
+  padding: 1.5rem 2rem;
+  background-color: #222222;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+}
+
+.uni-card:hover {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: #646464;
+}
+
+.uni-img-container {
+  width: 300px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 1.1rem;
+}
+
+.uni-h1 {
+  margin: 1rem 0;
+}
+
+.uni-para {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+}
+
+.more {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 2.6rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.more:hover {
+  background-color: #222222;
+  transition: 0.4s linear;
+}
+
+/* Unique Task End */
+
 @media screen and (max-width: 576px) {
   .icon {
     display: inline-block;
@@ -410,4 +480,46 @@
 }
 
 /* Habit Section Done */
+
+
+.unique-section {
+  background-color: black;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+}
+
+.uni-heading {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.uni-head {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.uni-para {
+  font-size: x-small;
+}
+
+.uni-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+}
+
+.uni-card {
+  margin: 0.7rem 1.2rem;
+  padding: 0.7rem 1.2rem;
+}
+
+.uni-img-container {
+  width: 320px;
+  height: 130px;
+}
+
+.uni-h1 {
+  margin: 0.5rem 0;
+}
+
+/* Unique Task End */
 }
