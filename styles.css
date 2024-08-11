@@ -118,7 +118,7 @@
 .btn_join {
   background-color: var(--color-primary);
   color: white;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.6rem;
   border-radius: 2.6rem;
   cursor: pointer;
   margin-right: 0.9rem;
@@ -127,7 +127,7 @@
 .btn_download {
   background-color: black;
   color: white;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.6rem;
   border-radius: 2.6rem;
   border: 1px solid white;
   cursor: pointer;
@@ -243,6 +243,46 @@
 }
 
 /* till habit */
+
+.extra-mile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  background-color: #222222;
+  padding: 2rem 3rem;
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+.btn_join-2 {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem 2.6rem;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  margin: 1rem 0 0 0;
+}
+
+.extra-para {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: x-small;
+}
+
+.image-div {
+  width: 366px;
+  height: 312px;
+  overflow: hidden;
+  border-radius: 1.1rem;
+}
+
+.imageone {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Habit section Done */
 @media screen and (max-width: 576px) {
   .icon {
     display: inline-block;
@@ -287,21 +327,13 @@
   .btn_container {
     display: flex;
   }
-
-  .btn_join {
-    padding: 1rem 1.6rem;
-  }
-
-  .btn_download {
-    padding: 1rem 1.6rem;
-  }
-
+ */
   .main_img {
     padding: 0 5rem;
   }
 
   .box {
-    left: 7rem;
+    left: 2rem;
     bottom: 15rem;
     padding: 0.7rem;
   }
@@ -324,7 +356,7 @@
     font-size: small;
   }
   .box-1 {
-    right: 7rem;
+    right: 2rem;
     top: 4rem;
     padding: 0.7rem;
   }
@@ -360,4 +392,22 @@
   .card-heading {
     margin-bottom: 0.2rem;
   }
+
+  /* till Habit  */
+
+  .extra-mile {
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+}
+
+.btn_container-2 {
+  margin-left: 30%;
+}
+
+.btn_join-2 {
+  margin: 1rem 0;
+}
+
+/* Habit Section Done */
 }
