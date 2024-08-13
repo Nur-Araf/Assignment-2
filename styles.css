@@ -577,7 +577,9 @@ input {
   margin-top: 2rem;
   font-size: 1.3rem;
 }
-@media screen and (max-width: 425px) {
+
+/* End ----*/
+@media screen and (max-width: 576px) {
   .icon {
     display: inline-block;
   }
@@ -821,12 +823,15 @@ input {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
 
+  .num-1, .num-4 {
+    display: none;
+  }
+
   .team-card {
     width: 20.3rem;
     height: 17rem;
     padding: 0.9rem 0 0.9rem 0.9rem;
-    margin-left: 0.9rem;
-    position: relative;
+    left: 1.1rem;
   }
 
   .imagetwo {
@@ -837,7 +842,6 @@ input {
   }
 
   .team-content {
-    position: absolute;
     bottom: 1.6rem;
     left: 4rem;
   }
